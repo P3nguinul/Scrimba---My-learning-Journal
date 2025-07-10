@@ -16,7 +16,12 @@ a, a:visited {
 }
 
 main {
-    margin: 3em 1.5em;m;
+    margin: 1.5em;
+}
+
+#xd {
+    filter: brightness(500%);
+    font-size: 0.6em;    
 }
 
 /* HEADER PART  */
@@ -57,17 +62,51 @@ h1 {
 
 /* INTRODUCTION PART */
 
-#hero {
-    color: white;
+.introduction {
+    margin: 3em 1.5em 1.5em;
 }
 
-.hero {
+.introduction-container {
+    margin: 3em 1.5em 2em;
+  
+}
+
+.article-subtitle {
+    font-size: 1.5rem;
+}
+
+.article-content {
+    font-size: 1.3em;
+    font-weight: 350;
+    line-height: 1.5;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+.article-image {
     display: block;
+    width: 90vw;
+    margin: 3em auto 2em;
     background-image: url("images/article-image-hero.png");
     background-size: cover;
-    padding: 6em 1.5em 1.5em 1.5em;
-    cursor: pointer;
-    color: white;
+    height: 100vw;
+    max-height: 300px;
+    
+}
+
+.profile-pic {
+    width: 50vw;
+    max-width: 350px;
+    margin-bottom: 2em; 
+}
+
+/* BLOGS AREA / MAIN */
+
+.recent-posts {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2em;
+    margin-bottom: 0;
 }
 
 .date {
@@ -136,9 +175,32 @@ footer p {
 }
 
 @media (min-width: 768px) {
-    
     main {
         margin-top: 0 
+    }
+
+    .introduction {
+        margin: 4em 8em;    
+    }
+    
+    .introduction-container {
+        display: flex;
+        height: 200px;
+    }
+    
+    .profile-pic {
+        margin-right: 1.5em;
+        max-width: fit-content;    
+    }
+    
+    .article-image {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        left: 0;
+        top: 0;
+        width: 90vw;
+        max-height: 500px;
     }
     
     .hero {
@@ -169,4 +231,5 @@ footer p {
     .description {
         font-size: 2vw;
     }
+    
 }
