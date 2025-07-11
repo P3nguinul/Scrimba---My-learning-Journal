@@ -1,7 +1,14 @@
-import {defineConfig} from "vite"
+// vite.config.js
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [
-		
-	]
-})
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        introduction: 'introductionIndex.html',
+        aboutMe: 'aboutMeIndex.html'
+      }
+    }
+  }
+});
