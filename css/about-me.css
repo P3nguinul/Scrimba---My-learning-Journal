@@ -211,25 +211,26 @@ footer p {
         padding-bottom: 3em;
     }
     
-    .blogs-area {
+      .blogs-area {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
+        gap: 2em;
     }
     
     .blog-image {
-        max-height: 500px;
+        max-height: 350px;
+        max-width: 500px;
     }
     
     .date {
-        font-size: 2vw;
+        font-size: 1vw;
     }
     
     .title {
-        font-size: 3vw;
-    }
-    
-    .description {
         font-size: 2vw;
     }
     
+    .description {
+        font-size: 1vw;
+    }
 }
+    

@@ -86,7 +86,7 @@ h1 {
     display: block;
     width: 90vw;
     margin: 3em auto 2em;
-    background-image: url("images/article-image-hero.png");
+    background-image: url("../images/article-image-hero.png");
     background-size: cover;
     height: 100vw;
     max-height: 300px;
@@ -205,25 +205,27 @@ footer p {
         padding-bottom: 3em;
     }
     
-    .blogs-area {
+    }
+    
+      .blogs-area {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
+        gap: 2em;
     }
     
     .blog-image {
-        max-height: 500px;
+        max-height: 350px;
+        max-width: 500px;
     }
     
     .date {
-        font-size: 2vw;
+        font-size: 1vw;
     }
     
     .title {
-        font-size: 3vw;
-    }
-    
-    .description {
         font-size: 2vw;
     }
     
-}
+    .description {
+        font-size: 1vw;
+    }
+

@@ -16,7 +16,7 @@ a, a:visited {
 }
 
 main {
-    margin: 3em 1.5em;m;
+    margin: 3em 1.5em;
 }
 
 /* HEADER PART  */
@@ -63,7 +63,8 @@ h1 {
 
 .hero {
     display: block;
-    background-image: url("images/article-image-hero.png");
+    background-image: url("../images/article-image-hero.png");
+    width: 100%;
     background-size: cover;
     padding: 6em 1.5em 1.5em 1.5em;
     cursor: pointer;
@@ -151,22 +152,23 @@ footer p {
     
     .blogs-area {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
+        gap: 2em;
     }
     
     .blog-image {
-        max-height: 500px;
+        max-height: 350px;
+        max-width: 500px;
     }
     
     .date {
-        font-size: 2vw;
+        font-size: 1vw;
     }
     
     .title {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     
     .description {
-        font-size: 2vw;
+        font-size: 1vw;
     }
 }
